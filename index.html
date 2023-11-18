@@ -3,16 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css" />
-    <title>Document</title>
+    <title>Camera</title>
   </head>
   <body>
     <main>
       <header class="header">Capture Moments</header>
       <div class="content">
         <h1>Your Personal Photo and Video Studio Online</h1>
-        <video id="camera" width="640" height="400" autoplay></video>
+        <div class="hero">
+
+            <img
+              src="./assets/main-background.jpg"
+              alt="man holding a camera"
+              width="350"
+            />
+            <div class="buttons-container">
+              <button class="click-picture btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-camera"
+                >
+                  <path
+                    d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                  />
+                  <circle cx="12" cy="13" r="3" />
+                </svg>
+                Click Picture
+              </button>
+              <button class="record-video btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-video"
+                >
+                  <path d="m22 8-6 4 6 4V8Z" />
+                  <rect width="14" height="12" x="2" y="6" rx="2" ry="2" />
+                </svg>
+                Record Video
+              </button>
+            </div>
+        </div>
+        <video id="camera" width="640" height="400" autoplay playsinline></video>
       </div>
+    </main>
     </main>
   </body>
   <script src="./index.js"></script>
